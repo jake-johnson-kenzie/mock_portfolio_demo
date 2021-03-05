@@ -283,8 +283,9 @@ body {
   }
   .work_list_item {
     width: 100%;
+    padding-right: 0;
     padding-bottom: 2.5rem;
-    height: 18rem;
+    height: 80vw;
   }
   .location_title {
     font-size: 1.2rem;
