@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body,
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #e0e0db;
 }
@@ -25,6 +31,9 @@ body {
   font-weight: 500;
 
   margin-left: auto;
+}
+.nav_list_menu-icon {
+  display: none;
 }
 .nav_list_item {
   margin-right: 1rem;
@@ -227,4 +236,93 @@ body {
 }
 .footer_contact_icon img {
   width: 1.2rem;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .main {
+    padding: 0 6vw;
+  }
+  .nav {
+    padding: 6vw 4vw;
+  }
+  .nav_title {
+    font-size: 1.5rem;
+  }
+  .nav_list_menu-icon {
+    display: block;
+    margin-left: auto;
+  }
+  .nav_list {
+    display: none;
+  }
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero_img {
+    width: 100%;
+    padding-right: 0;
+  }
+  .hero_text {
+    margin-left: 0;
+  }
+  .hero_text_intro {
+    flex-direction: column-reverse;
+    margin-top: 2rem;
+    align-items: flex-start;
+  }
+  .hero_text_intro::after {
+    margin-bottom: 3rem;
+    align-self: center;
+  }
+  .hero_text_body {
+    font-size: 3rem;
+  }
+  .work_title {
+    padding: 20vh 0;
+  }
+  .work_list_item {
+    width: 100%;
+    padding-bottom: 2.5rem;
+    height: 18rem;
+  }
+  .location_title {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+  .location_name {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  .location_map {
+    height: 200px;
+    margin-bottom: 5rem;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer_text {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .footer_text_title {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .footer_contact {
+    width: 100%;
+  }
+  .footer_contact_input {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .footer_contact_input input {
+    padding: 1.2rem 0 1.2rem 2rem;
+    width: auto;
+    margin-bottom: 2rem;
+  }
+  .footer_contact_input button {
+    width: auto;
+    padding: 1.2rem 2rem;
+  }
 }
